@@ -2,6 +2,7 @@ const start = 'Работает))'
 const spamText = 'Введите текст'
 const silent = 'ура'
 const help = 'аааа'
+const stop = 'умер('
 
 
 const commandNotFound = 'Такой команды нет('
@@ -12,4 +13,5 @@ module.exports = {
   silent,
   help,
   commandNotFound,
+  stop,
 }
