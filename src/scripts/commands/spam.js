@@ -11,7 +11,11 @@ const handler = async function (msg, bot, {spamData}) {
   }
   spamData.push({
     interval: setInterval(async() => {
-      await bot.sendMessage(msg.chat.id, spamText)
+      try {
+        await bot.sendMessage(msg.chat.id, spamText)
+      } catch (e) {
+        $f.errorHandler(e)
+      }
     }, 1000),
     text: spamText,
   })

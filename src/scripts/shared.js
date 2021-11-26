@@ -1,5 +1,5 @@
 const errorHandler = (err) => {
-  printLog('ERROR', err, true)
+  printLog(`ERROR`, err, true)
 }
 
 const printLog = (message, content = '', error = false) => {
@@ -11,6 +11,11 @@ const printLog = (message, content = '', error = false) => {
   } else {
     console.error(`> ${timeStr} :: ${message? message: 'log'}`)
     console.error(content)
+    if (content.message) {
+      console.error(':::: error message ::::')
+      console.error(content.message)
+      console.error('::::  end message  ::::')
+    }
     console.error('> end log\n')
   }
 }
