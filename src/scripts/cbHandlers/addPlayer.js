@@ -12,7 +12,7 @@ const handler = async function(msg, bot, data) {
     if (data.gameData.players.every(el => el.id !== msg.from.id)) {
       const newPlayer = {
         id: msg.from.id,
-        username: msg.from.username,
+        username: msg.from.username ? msg.from.username : msg.from.id,
         choice: null,
       }
       data.gameData.players.push(newPlayer)
