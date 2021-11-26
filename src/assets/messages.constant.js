@@ -8,7 +8,7 @@ module.exports = {
   gameAddPlayers: 'Чтобы начать игру, нажмите ✅, чтобы присоединиться к игре, нажмите ➕, для отмены нажмите ❌\nИгроки в игре:\n',
   gameAlreadyStarted: 'Игра уже запущена',
   gameCanceled: 'Отмена игры',
-  gameFewPlayers: 'Слишком мало игроков',
+  gameFewPlayers: 'Нажмите ➕, чтобы присоединиться',
   gameStarted: 'Ираем',
   gameEnd: 'Спасибо за игру',
   commandNotFound: 'Такой команды нет(',
