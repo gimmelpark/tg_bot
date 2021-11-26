@@ -13,6 +13,7 @@ const handler = async function(msg, bot, data) {
       const newPlayer = {
         id: msg.from.id,
         username: msg.from.username,
+        choice: null,
       }
       data.gameData.players.push(newPlayer)
       $f.printLog('add player', newPlayer)

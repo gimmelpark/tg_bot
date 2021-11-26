@@ -10,6 +10,7 @@ module.exports = {
   gameCanceled: 'Отмена игры',
   gameFewPlayers: 'Слишком мало игроков',
   gameStarted: 'Ираем',
+  gameEnd: 'Спасибо за игру',
   commandNotFound: 'Такой команды нет(',
   stop: '(',
 }
