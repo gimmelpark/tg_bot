@@ -21,9 +21,9 @@ const handler = async function(msg, bot, data) {
         messages.gameAddPlayers + data.gameData.players.map(el => el.username).join('\n'),
         options
       )
-      await bot.sendMessage(msg.message.chat.id, `Добавлен игрок ${msg.from.username}`)
+      await bot.sendMessage(msg.message.chat.id, `Добавлен игрок ${newPlayer.username}`)
     } else {
-      await bot.sendMessage(msg.message.chat.id, `Игрок ${msg.from.username} уже в игре`)
+      await bot.sendMessage(msg.message.chat.id, `Игрок ${msg.from.username ? msg.from.username : msg.from.id} уже в игре`)
     }
   }
 }
